@@ -6,9 +6,9 @@ lista_acerto_par = []
 
 def listaNum():
     lista_num = sample(range(1, 80), 6)
-    print("--------------------------------------")
-    print("######", lista_num, "######")
-    print("-------------------------------------- \n")
+    print("\033[0;46;33m--------------------------------------\033[m")
+    print("\033[0;46;33m######", lista_num, "#######\033[m")
+    print("\033[0;46;33m--------------------------------------\033[m \n")
     return lista_num
 
 def par(par_n):
@@ -48,15 +48,13 @@ def impar(impar_n):
     return resultado_impar
 
 def main():
-    print("Vamos Aprender Par ou Ímpar! \n" )
+    print("\033[4;36;40mVamos Aprender Par ou Ímpar!\033[m \n" )
     placar_par = par(3)
     placar_impar = impar(3)
 
     print("Placar do Jogo! \n")
     print('Parabens, você acertou ' + str(placar_par) + ' pares e ' + str(placar_impar) + ' impares.' +' \n')
 
-
-
-
 main()
+
 
